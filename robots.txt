@@ -1,0 +1,4 @@
+Sitemap: https://www.smallblocksoftware.com/sitemapindex.xml
+
+User-Agent: *
+Host: www.smallblocksoftware.com
