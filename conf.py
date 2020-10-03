@@ -151,7 +151,7 @@ NAVIGATION_LINKS = {
 NAVIGATION_ALT_LINKS = {DEFAULT_LANG: ()}
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "sbs_custom_theme_2"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -177,6 +177,7 @@ THEME_CONFIG = {
         "featured_strip_html": False,
         # Contents of the sidebar, If empty, the sidebar is not displayed.
         "sidebar": "",
+        "navbar_light": True,
     }
 }
 
@@ -1227,6 +1228,17 @@ MARKDOWN_EXTENSIONS = [
 # before </head>
 # (translatable)
 # EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = """
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="SmallBlockSoftware">
+<meta name="application-name" content="SmallBlockSoftware">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
