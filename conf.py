@@ -216,14 +216,14 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.md", "pages", "page.tmpl"),
+    ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
 )
@@ -248,7 +248,7 @@ TIMEZONE = "America/Detroit"
 # Date format used to display post dates. (translatable)
 # Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time
 # You can also use 'full', 'long', 'medium', or 'short'
-# DATE_FORMAT = 'yyyy-MM-dd HH:mm'
+DATE_FORMAT = "yyyy-MM-dd"
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # Used by Luxon: https://moment.github.io/luxon/docs/manual/formatting
@@ -292,8 +292,8 @@ TIMEZONE = "America/Detroit"
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": [".rst", ".txt"],
     "markdown": [".md", ".mdown", ".markdown"],
+    "rest": [".rst", ".txt"],
     "textile": [".textile"],
     "txt2tags": [".t2t"],
     "bbcode": [".bb"],
@@ -329,7 +329,7 @@ COMPILERS = {
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
 # The setting is ignored when creating pages.
-# NEW_POST_DATE_PATH = False
+NEW_POST_DATE_PATH = True
 
 # What format to use when creating posts with date paths?
 # Default is '%Y/%m/%d', other possibilities include '%Y' or '%Y/%m'.
@@ -897,7 +897,7 @@ IMAGE_FOLDERS = {"images": "images"}
 # This list MAY be incomplete since pygments adds styles every now and then.
 # Check with list(pygments.styles.get_all_styles()) in an interpreter.
 #
-# CODE_COLOR_SCHEME = 'default'
+CODE_COLOR_SCHEME = "monokai"
 
 # FAVICONS contains (name, file, size) tuples.
 # Used to create favicon link like this:
@@ -940,14 +940,14 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+# LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
-# LICENSE = """
-# <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-# <img alt="Creative Commons License BY-NC-SA"
-# style="border-width:0; margin-bottom:12px;"
-# src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>"""
+LICENSE = """
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
