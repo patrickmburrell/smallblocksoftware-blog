@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.smallblocksoftware.com/</loc>
-  <lastmod>2020-09-30T13:53:00Z</lastmod>
+  <lastmod>2020-10-03T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.smallblocksoftware.com/2020/</loc>
@@ -15,11 +15,43 @@
  </url>
  <url>
   <loc>https://www.smallblocksoftware.com/archive.html</loc>
-  <lastmod>2020-09-30T16:49:00Z</lastmod>
+  <lastmod>2020-10-05T00:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.smallblocksoftware.com/categories/</loc>
-  <lastmod>2020-09-30T13:53:00Z</lastmod>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/categories/cat_blog/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/categories/cat_software/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/categories/github/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/categories/software/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/categories/vscode/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/posts/2020/05/01/hello-there/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/posts/2020/06/01/github-gists/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.smallblocksoftware.com/posts/2020/07/01/prompting-for-parameters-in-vs-code/</loc>
+  <lastmod>2020-10-03T21:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.smallblocksoftware.com/posts/hi/</loc>
