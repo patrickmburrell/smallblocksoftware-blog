@@ -988,12 +988,12 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, muut, commento
 # You can leave this option blank to disable comments.
-# COMMENT_SYSTEM = "disqus"
+COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-# COMMENT_SYSTEM_ID = "smallblocksoftware.disqus.com"
+COMMENT_SYSTEM_ID = "smallblocksoftware.disqus.com"
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
@@ -1133,10 +1133,10 @@ MARKDOWN_EXTENSIONS = [
 # """
 
 # Show link to source for the posts?
-# SHOW_SOURCELINK = True
+# SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
-# COPY_SOURCES = True
+# COPY_SOURCES = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
