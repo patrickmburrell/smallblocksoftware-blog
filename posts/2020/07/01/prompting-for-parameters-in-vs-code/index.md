@@ -7,6 +7,7 @@
 .. link:
 .. description:
 .. type: text
+.. nocomments: True
 -->
 
 While debugging a node.js app in VS Code at work, I thought it sure would be nice if I could pass a parameter into my app to decide what deployment stage to target. A few minutes with Google turned up the info I needed to make this happen.
@@ -21,27 +22,27 @@ Next up: get VS Code to prompt me for that stage when launching the debugger. I 
 
 ```json
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "DevOps: create tables",
-      "program": "${workspaceRoot}/devOps/actions/createTables.js",
-      "args": ["${input:pickStage}"],
-      "cwd": "${workspaceRoot}",
-      "outputCapture": "std"
-    }
-  ],
-  "inputs": [
-    {
-      "id": "pickStage",
-      "description": "Select target stage",
-      "type": "pickString",
-      "options": ["res", "dev", "pro"],
-      "default": "res"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "DevOps: create tables",
+            "program": "${workspaceRoot}/devOps/actions/createTables.js",
+            "args": ["${input:pickStage}"],
+            "cwd": "${workspaceRoot}",
+            "outputCapture": "std"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "pickStage",
+            "description": "Select target stage",
+            "type": "pickString",
+            "options": ["res", "dev", "pro"],
+            "default": "res"
+        }
+    ]
 }
 ```
 

@@ -7,6 +7,7 @@
 .. link:
 .. description:
 .. type: text
+.. nocomments: True
 -->
 
 ![TRS-80 Model II](/images/trs80.jpeg)
