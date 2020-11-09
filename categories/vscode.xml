@@ -3,11 +3,10 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Mon, 05 Oct 2020 00:46:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Prompting for Parameters in VS Code</title><link>https://www.smallblocksoftware.com/posts/2020/07/01/prompting-for-parameters-in-vs-code/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;While debugging a node.js app in VS Code at work, I thought it sure would be nice if I could pass a parameter into my app to decide what deployment stage to target. A few minutes with Google turned up the info I needed to make this happen.&lt;/p&gt;
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Mon, 09 Nov 2020 01:07:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Prompting for Parameters in VS Code</title><link>https://www.smallblocksoftware.com/posts/2020/07/01/prompting-for-parameters-in-vs-code/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;While debugging a node.js app in VS Code at work, I thought it sure would be nice if I could pass a parameter into my app to decide what deployment stage to target. A few minutes with Google turned up the info I needed to make this happen.&lt;/p&gt;
 &lt;p&gt;First, I found how to read parameters from the command line:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;const &lt;span class="nv"&gt;stage&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; process.argv&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;/pre&gt;
-
 &lt;p&gt;Next up: get VS Code to prompt me for that stage when launching the debugger. I found out I needed to modify the &lt;code&gt;.vscode/launch.json&lt;/code&gt; file in the project folder. Here is a cleaned-up version of that file:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nt"&gt;"version"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"0.2.0"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -33,6 +32,5 @@ src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copy
     &lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;
-
 &lt;p&gt;The new parts I had to add were the &lt;code&gt;${input:pickStage}&lt;/code&gt; value in the &lt;code&gt;args&lt;/code&gt; array and the &lt;code&gt;inputs&lt;/code&gt; array with my stage values (&lt;code&gt;res&lt;/code&gt;, &lt;code&gt;dev&lt;/code&gt;, &lt;code&gt;pro&lt;/code&gt;) and the default choice (&lt;code&gt;res&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;Holy cats, do I love VS Code!&lt;/p&gt;&lt;/div&gt;</description><category>vscode</category><guid>https://www.smallblocksoftware.com/posts/2020/07/01/prompting-for-parameters-in-vs-code/</guid><pubDate>Wed, 01 Jul 2020 16:00:00 GMT</pubDate></item></channel></rss>
