@@ -12,6 +12,8 @@
 
 I finally took a few minutes to learn what gists are in GitHub. I understood the basic idea from encountering them all over the web, but I wanted to precisely know what they are.
 
+<!-- TEASER_END -->
+
 Here are some essential aspects of gists, as I understand them:
 
 -   each gist is a repository, with all that implies:

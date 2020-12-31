@@ -12,6 +12,8 @@
 
 While debugging a node.js app in VS Code at work, I thought it sure would be nice if I could pass a parameter into my app to decide what deployment stage to target. A few minutes with Google turned up the info I needed to make this happen.
 
+<!-- TEASER_END -->
+
 First, I found how to read parameters from the command line:
 
 ```shell
