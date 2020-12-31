@@ -20,7 +20,7 @@
 <meta name="application-name" content="SmallBlockSoftware">
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#ffffff">
-<link rel="prefetch" href="posts/2020/11/08/creating-a-blog-on-github-pages-pt1/" type="text/html">
+<link rel="prefetch" href="posts/creating-a-blog-on-github-pages/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -70,150 +70,69 @@ navbar-light bg-primary
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/11/08/creating-a-blog-on-github-pages-pt1/" class="u-url">Creating a Blog on GitHub Pages - Pt.1</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/creating-a-blog-on-github-pages/" class="u-url">Creating a Blog on GitHub Pages</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Patrick Burrell
             </span></p>
             <p class="dateline">
-            <a href="posts/2020/11/08/creating-a-blog-on-github-pages-pt1/" rel="bookmark">
+            <a href="posts/creating-a-blog-on-github-pages/" rel="bookmark">
             <time class="published dt-published" datetime="2020-11-08T19:44:06-05:00" itemprop="datePublished" title="2020-11-08">2020-11-08</time></a>
             </p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
-<p>Over the past several years, I've tried to get a blog going using a few different platforms: <a href="https://www.squarespace.com">Squarespace</a>, <a href="https://www.tumblr.com">Tumblr</a>, <a href="https://wordpress.com">WordPress</a>, and <a href="https://ghost.org">Ghost</a>. For one reason or another - I'm sure mostly my lack of commitment - I never stuck with any of them. But "hope springs eternal," so I am starting again. This time I'm using <a href="https://getnikola.com/blog/">Nikola</a> to build a static site blog; I'm hosting it on <a href="https://pages.github.com">GitHib Pages</a>.</p>
-<p>I've been using Python almost exclusively the last year as the DevOps person on my data science team at work. (Before that, my predominant use of JavaScript led me to try Ghost.) I like the idea of using a static site for a blog because my needs will be simple and straightforward. Also, I'm a huge fan of Markdown, so Nikola held interesting and fun potential.</p>
+<p>Over the past several years, I've tried to get a blog going using a few different platforms: <a href="https://www.squarespace.com">Squarespace</a>, <a href="https://www.tumblr.com">Tumblr</a>, <a href="https://wordpress.com">WordPress</a>, and <a href="https://ghost.org">Ghost</a>. For one reason or another - I'm sure mostly my lack of commitment - I never stuck with any of them.</p>
+<p class="more"><a href="posts/creating-a-blog-on-github-pages/">Read more…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/07/01/prompting-for-parameters-in-vs-code/" class="u-url">Prompting for Parameters in VS Code</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/prompting-for-parameters-in-vs-code/" class="u-url">Prompting for Parameters in VS Code</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Patrick Burrell
             </span></p>
             <p class="dateline">
-            <a href="posts/2020/07/01/prompting-for-parameters-in-vs-code/" rel="bookmark">
+            <a href="posts/prompting-for-parameters-in-vs-code/" rel="bookmark">
             <time class="published dt-published" datetime="2020-07-01T12:00:00-04:00" itemprop="datePublished" title="2020-07-01">2020-07-01</time></a>
             </p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
 <p>While debugging a node.js app in VS Code at work, I thought it sure would be nice if I could pass a parameter into my app to decide what deployment stage to target. A few minutes with Google turned up the info I needed to make this happen.</p>
-<p>First, I found how to read parameters from the command line:</p>
-<pre class="code literal-block">const <span class="nv">stage</span> <span class="o">=</span> process.argv<span class="o">[</span><span class="m">2</span><span class="o">]</span>
-</pre>
-<p>Next up: get VS Code to prompt me for that stage when launching the debugger. I found out I needed to modify the <code>.vscode/launch.json</code> file in the project folder. Here is a cleaned-up version of that file:</p>
-<pre class="code literal-block"><span class="p">{</span>
-    <span class="nt">"version"</span><span class="p">:</span> <span class="s2">"0.2.0"</span><span class="p">,</span>
-    <span class="nt">"configurations"</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"node"</span><span class="p">,</span>
-            <span class="nt">"request"</span><span class="p">:</span> <span class="s2">"launch"</span><span class="p">,</span>
-            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"DevOps: create tables"</span><span class="p">,</span>
-            <span class="nt">"program"</span><span class="p">:</span> <span class="s2">"${workspaceRoot}/devOps/actions/createTables.js"</span><span class="p">,</span>
-            <span class="nt">"args"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"${input:pickStage}"</span><span class="p">],</span>
-            <span class="nt">"cwd"</span><span class="p">:</span> <span class="s2">"${workspaceRoot}"</span><span class="p">,</span>
-            <span class="nt">"outputCapture"</span><span class="p">:</span> <span class="s2">"std"</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">"inputs"</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"pickStage"</span><span class="p">,</span>
-            <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"Select target stage"</span><span class="p">,</span>
-            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"pickString"</span><span class="p">,</span>
-            <span class="nt">"options"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"res"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">,</span> <span class="s2">"pro"</span><span class="p">],</span>
-            <span class="nt">"default"</span><span class="p">:</span> <span class="s2">"res"</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
-<span class="p">}</span>
-</pre>
-<p>The new parts I had to add were the <code>${input:pickStage}</code> value in the <code>args</code> array and the <code>inputs</code> array with my stage values (<code>res</code>, <code>dev</code>, <code>pro</code>) and the default choice (<code>res</code>).</p>
-<p>Holy cats, do I love VS Code!</p>
+<p class="more"><a href="posts/prompting-for-parameters-in-vs-code/">Read more…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/06/01/github-gists/" class="u-url">GitHub Gists</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/github-gists/" class="u-url">GitHub Gists</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Patrick Burrell
             </span></p>
             <p class="dateline">
-            <a href="posts/2020/06/01/github-gists/" rel="bookmark">
+            <a href="posts/github-gists/" rel="bookmark">
             <time class="published dt-published" datetime="2020-06-01T12:00:00-04:00" itemprop="datePublished" title="2020-06-01">2020-06-01</time></a>
             </p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
 <p>I finally took a few minutes to learn what gists are in GitHub. I understood the basic idea from encountering them all over the web, but I wanted to precisely know what they are.</p>
-<p>Here are some essential aspects of gists, as I understand them:</p>
-<ul>
-<li>each gist is a repository, with all that implies:<ul>
-<li>can be versioned and diff’ed</li>
-<li>can be forked or cloned</li>
-</ul>
-</li>
-<li>a gist can be public or secret<ul>
-<li>secret doesn’t mean private; it means not searchable</li>
-<li>however, its URL is discoverable and shareable</li>
-</ul>
-</li>
-<li>a gist can contain anything text-based, such as:<ul>
-<li>source code</li>
-<li>Markdown and plain text</li>
-<li>JSON, XML, and CSV data</li>
-<li>Jupyter Notebooks</li>
-<li>GeoJSON files (maps!)</li>
-</ul>
-</li>
-<li>more info: <a href="https://help.github.com/en/articles/creating-gists#about-gists">About gists</a>
-</li>
-</ul>
-<p>My recent motivation for learning to use gists was to embed sample code on this blog, like this:</p>
-<p>
-</p>
-<div class="gist">
-<script src="https://gist.github.com/9e26a4f1d0b29d98436c06051e747035.js"></script><noscript>
-<pre>const shortid = require('shortid');
-
-function order() {
-    function generateId() {
-        const id = shortid.generate();
-        return id;
-    }
-
-    return {
-        generateId
-    };
-}
-
-module.exports = order;
-</pre>
-</noscript>
-</div>
-
-<p>Pretty convenient and simple!</p>
+<p class="more"><a href="posts/github-gists/">Read more…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/05/01/hello-there/" class="u-url">Hello There!</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/hello-there/" class="u-url">Hello There!</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Patrick Burrell
             </span></p>
             <p class="dateline">
-            <a href="posts/2020/05/01/hello-there/" rel="bookmark">
+            <a href="posts/hello-there/" rel="bookmark">
             <time class="published dt-published" datetime="2020-05-01T12:00:00-04:00" itemprop="datePublished" title="2020-05-01">2020-05-01</time></a>
             </p>
         </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
 <p><img alt="TRS-80 Model II" src="images/trs80.jpeg"></p>
 <p>I’ve been a software developer for a long time. I loved it when I started; I love it even more now.</p>
-<p>A lot has changed since I looked for the latest programming books at <a href="https://www.schulerbooks.com/">Schuler Books</a> and read <em>Windows/DOS Developer’s Journal</em>. Now I have a super computer in my pocket that’s connected to the world. How did I get so lucky as to find a career that just keeps getting more interesting, more fun, and more challenging?</p>
-<p>There was a time when I was driven to memorize the Windows 3.0 API as a badge of honor. Now I have <a href="https://www.google.com">Google</a> and <a href="https://www.stackoverflow.com">Stack Overflow</a>, along with a bunch of new languages and tools, libraries and packages, concepts and terms.</p>
-<p>I’m motivated to be productive in a development world and culture that seems so different from that of my career beginnings. On this blog, I’m going to write about my efforts to make things with software and stay relevant and employable. The particular knowledge I had in the 1980s-1990s-2000s isn’t in high demand now, so I’m learning Python and JavaScript, Jupyter Notebooks, node.js, GitHub, AWS, etc.
-But the design, debugging, problem solving, organization, and communication skills I've nurtured over time continue to serve both me
-and my employer well.</p>
-<p>I know there are others in a similar situation. Maybe this will resonate with you? Maybe you’ll have suggestions for how I can do this better? I’d welcome your thoughts.</p>
-<p><img alt="code on iPhone" src="images/iphone-code.png"></p>
+<p class="more"><a href="posts/hello-there/">Read more…</a></p>
 </div>
     </div>
     </article>

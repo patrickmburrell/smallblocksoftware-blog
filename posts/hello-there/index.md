@@ -14,6 +14,8 @@
 
 I’ve been a software developer for a long time. I loved it when I started; I love it even more now.
 
+<!-- TEASER_END -->
+
 A lot has changed since I looked for the latest programming books at [Schuler Books](https://www.schulerbooks.com/) and read _Windows/DOS Developer’s Journal_. Now I have a super computer in my pocket that’s connected to the world. How did I get so lucky as to find a career that just keeps getting more interesting, more fun, and more challenging?
 
 There was a time when I was driven to memorize the Windows 3.0 API as a badge of honor. Now I have [Google](https://www.google.com) and [Stack Overflow](https://www.stackoverflow.com), along with a bunch of new languages and tools, libraries and packages, concepts and terms.

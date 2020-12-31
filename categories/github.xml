@@ -3,51 +3,6 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Thu, 31 Dec 2020 00:00:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a Blog on GitHub Pages - Pt.1</title><link>https://www.smallblocksoftware.com/posts/2020/11/08/creating-a-blog-on-github-pages-pt1/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;Over the past several years, I've tried to get a blog going using a few different platforms: &lt;a href="https://www.squarespace.com"&gt;Squarespace&lt;/a&gt;, &lt;a href="https://www.tumblr.com"&gt;Tumblr&lt;/a&gt;, &lt;a href="https://wordpress.com"&gt;WordPress&lt;/a&gt;, and &lt;a href="https://ghost.org"&gt;Ghost&lt;/a&gt;. For one reason or another - I'm sure mostly my lack of commitment - I never stuck with any of them. But "hope springs eternal," so I am starting again. This time I'm using &lt;a href="https://getnikola.com/blog/"&gt;Nikola&lt;/a&gt; to build a static site blog; I'm hosting it on &lt;a href="https://pages.github.com"&gt;GitHib Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I've been using Python almost exclusively the last year as the DevOps person on my data science team at work. (Before that, my predominant use of JavaScript led me to try Ghost.) I like the idea of using a static site for a blog because my needs will be simple and straightforward. Also, I'm a huge fan of Markdown, so Nikola held interesting and fun potential.&lt;/p&gt;&lt;/div&gt;</description><category>github</category><guid>https://www.smallblocksoftware.com/posts/2020/11/08/creating-a-blog-on-github-pages-pt1/</guid><pubDate>Mon, 09 Nov 2020 00:44:06 GMT</pubDate></item><item><title>GitHub Gists</title><link>https://www.smallblocksoftware.com/posts/2020/06/01/github-gists/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;I finally took a few minutes to learn what gists are in GitHub. I understood the basic idea from encountering them all over the web, but I wanted to precisely know what they are.&lt;/p&gt;
-&lt;p&gt;Here are some essential aspects of gists, as I understand them:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;each gist is a repository, with all that implies:&lt;ul&gt;
-&lt;li&gt;can be versioned and diff’ed&lt;/li&gt;
-&lt;li&gt;can be forked or cloned&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;a gist can be public or secret&lt;ul&gt;
-&lt;li&gt;secret doesn’t mean private; it means not searchable&lt;/li&gt;
-&lt;li&gt;however, its URL is discoverable and shareable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;a gist can contain anything text-based, such as:&lt;ul&gt;
-&lt;li&gt;source code&lt;/li&gt;
-&lt;li&gt;Markdown and plain text&lt;/li&gt;
-&lt;li&gt;JSON, XML, and CSV data&lt;/li&gt;
-&lt;li&gt;Jupyter Notebooks&lt;/li&gt;
-&lt;li&gt;GeoJSON files (maps!)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;more info: &lt;a href="https://help.github.com/en/articles/creating-gists#about-gists"&gt;About gists&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;My recent motivation for learning to use gists was to embed sample code on this blog, like this:&lt;/p&gt;
-&lt;p&gt;
-&lt;/p&gt;&lt;div class="gist"&gt;
-&lt;script src="https://gist.github.com/9e26a4f1d0b29d98436c06051e747035.js"&gt;&lt;/script&gt;
-&lt;noscript&gt;
-&lt;pre&gt;const shortid = require('shortid');
-
-function order() {
-    function generateId() {
-        const id = shortid.generate();
-        return id;
-    }
-
-    return {
-        generateId
-    };
-}
-
-module.exports = order;
-&lt;/pre&gt;
-&lt;/noscript&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Pretty convenient and simple!&lt;/p&gt;&lt;/div&gt;</description><category>github</category><guid>https://www.smallblocksoftware.com/posts/2020/06/01/github-gists/</guid><pubDate>Mon, 01 Jun 2020 16:00:00 GMT</pubDate></item></channel></rss>
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Thu, 31 Dec 2020 20:52:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a Blog on GitHub Pages</title><link>https://www.smallblocksoftware.com/posts/creating-a-blog-on-github-pages/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;Over the past several years, I've tried to get a blog going using a few different platforms: &lt;a href="https://www.squarespace.com"&gt;Squarespace&lt;/a&gt;, &lt;a href="https://www.tumblr.com"&gt;Tumblr&lt;/a&gt;, &lt;a href="https://wordpress.com"&gt;WordPress&lt;/a&gt;, and &lt;a href="https://ghost.org"&gt;Ghost&lt;/a&gt;. For one reason or another - I'm sure mostly my lack of commitment - I never stuck with any of them.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.smallblocksoftware.com/posts/creating-a-blog-on-github-pages/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>github</category><guid>https://www.smallblocksoftware.com/posts/creating-a-blog-on-github-pages/</guid><pubDate>Mon, 09 Nov 2020 00:44:06 GMT</pubDate></item><item><title>GitHub Gists</title><link>https://www.smallblocksoftware.com/posts/github-gists/</link><dc:creator>Patrick Burrell</dc:creator><description>&lt;div&gt;&lt;p&gt;I finally took a few minutes to learn what gists are in GitHub. I understood the basic idea from encountering them all over the web, but I wanted to precisely know what they are.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.smallblocksoftware.com/posts/github-gists/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>github</category><guid>https://www.smallblocksoftware.com/posts/github-gists/</guid><pubDate>Mon, 01 Jun 2020 16:00:00 GMT</pubDate></item></channel></rss>
