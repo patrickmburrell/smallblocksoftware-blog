@@ -344,7 +344,7 @@ NEW_POST_DATE_PATH = False
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-LOGO_URL = "color-logo-navbar.png"
+LOGO_URL = "/images/color-logo-navbar.png"
 
 # When linking posts to social media, Nikola provides Open Graph metadata
 # which is used to show a nice preview. This includes an image preview
