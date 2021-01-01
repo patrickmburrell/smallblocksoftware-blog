@@ -1058,3 +1058,6 @@ a:hover {
     text-decoration: underline;
 }
 
+.navbar-brand {
+    font-size: xx-large;
+}

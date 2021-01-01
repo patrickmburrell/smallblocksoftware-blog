@@ -174,3 +174,7 @@ a:hover {
     color: #237CC5;
     text-decoration: underline;
 }
+
+.navbar-brand {
+    font-size: xx-large;
+}
