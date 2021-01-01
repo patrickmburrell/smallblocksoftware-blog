@@ -972,7 +972,7 @@ CONTENT_FOOTER_FORMATS = {
         {
             "email": BLOG_EMAIL,
             "author": BLOG_AUTHOR,
-            "date": time.gmtime().tm_year,
+            "date": f"2020-{time.gmtime().tm_year}",
             "license": LICENSE,
         },
     )
@@ -980,8 +980,8 @@ CONTENT_FOOTER_FORMATS = {
 
 # A simple copyright tag for inclusion in RSS feeds that works just
 # like CONTENT_FOOTER and CONTENT_FOOTER_FORMATS
-RSS_COPYRIGHT = 'Contents © {date} <a href="mailto:{email}">{author}</a> {license}'
-RSS_COPYRIGHT_PLAIN = "Contents © {date} {author} {license}"
+RSS_COPYRIGHT = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> {license}'
+RSS_COPYRIGHT_PLAIN = "Contents &copy; {date} {author} {license}"
 RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 
 # To use comments, you can choose between different third party comment
