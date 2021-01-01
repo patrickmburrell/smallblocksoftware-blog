@@ -1072,4 +1072,6 @@ a:hover {
 
 .navbar-brand {
     font-size: xx-large;
+    align-items: center;
+    display: flex;
 }
