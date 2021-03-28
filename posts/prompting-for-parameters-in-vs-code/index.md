@@ -3,7 +3,7 @@
 .. slug: prompting-for-parameters-in-vs-code
 .. date: 2020-07-01 12:00:00 UTC-04:00
 .. tags: vscode
-.. category: software
+.. category: softwaredev
 .. link:
 .. description:
 .. type: text
