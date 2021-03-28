@@ -3,7 +3,7 @@
 .. slug: github-gists
 .. date: 2020-06-01 12:00:00 UTC-04:00
 .. tags: github
-.. category: software
+.. category: softwaredev
 .. link:
 .. description:
 .. type: text
