@@ -106,7 +106,7 @@ navbar-dark bg-dark
 <p>I use many of these key pairs - pretty much one for each service or server I use. I wouldn't use one key for all the buildings, rooms, and cars I need to access. I don't see why I'd use only one key pair either. If one of my keys is ever compromised, I will not unintentionally open up all the resources I securely access.</p>
 <p>So I use one key pair for the repos in my personal GitHub account and another for the repos at work.</p>
 <p>But I was running into strange and unexplained git errors sometimes. I think there is probably an understandable explanation for these errors that seemed to occur randomly. Still, because my access to work repos was affected, I didn't spend much time trying to understand why. I just needed a solution quickly.</p>
-<p>The GitHub error messages suggested that I didn't have my keys configured correctly. However, when executed <code>ssh -T github_personal_pmb</code> (where <code>github_personal_pmb</code> is a host name in my <code>~/.ssh/config</code> file), I got this response which confirmed that they were:</p>
+<p>The GitHub error messages suggested that I didn't have my keys configured correctly. However, when I executed <code>ssh -T github_personal_pmb</code> (where <code>github_personal_pmb</code> is a host name in my <code>~/.ssh/config</code> file), I got this response which confirmed that they were:</p>
 <pre class="code literal-block">Hi patrickmburrell! You’ve successfully authenticated, but GitHub does not provide shell access.
 </pre>
 <p>After much time googling for this error message:</p>
