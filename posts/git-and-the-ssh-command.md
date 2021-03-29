@@ -24,7 +24,7 @@ So I use one key pair for the repos in my personal GitHub account and another fo
 
 But I was running into strange and unexplained git errors sometimes. I think there is probably an understandable explanation for these errors that seemed to occur randomly. Still, because my access to work repos was affected, I didn't spend much time trying to understand why. I just needed a solution quickly.
 
-The GitHub error messages suggested that I didn't have my keys configured correctly. However, when executed `ssh -T github_personal_pmb` (where `github_personal_pmb` is a host name in my `~/.ssh/config` file), I got this response which confirmed that they were:
+The GitHub error messages suggested that I didn't have my keys configured correctly. However, when I executed `ssh -T github_personal_pmb` (where `github_personal_pmb` is a host name in my `~/.ssh/config` file), I got this response which confirmed that they were:
 
 ```text
 Hi patrickmburrell! You’ve successfully authenticated, but GitHub does not provide shell access.
